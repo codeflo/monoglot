@@ -4,6 +4,8 @@ import { prerender } from "./prerender";
 import * as koaStatic from "koa-static";
 import * as path from "path";
 
+const port = 3000;
+
 async function main() {
   const server = new Koa();
   const router = new Router();
@@ -18,7 +20,8 @@ async function main() {
   server.use(router.routes());
   server.use(router.allowedMethods());
 
-  server.listen(3000);
+  server.listen(port);
+  console.log(`Server running on http://localhost:${port}/`);
 }
 
 main().catch(e => console.error(e));
