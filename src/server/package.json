@@ -1,0 +1,23 @@
+{
+  "name": "@monoglot/server",
+  "version": "1.0.0",
+  "main": "out/compiled/main.js",
+  "license": "none",
+  "private": true,
+  "scripts": {
+    "start": "node -r source-map-support/register out/compiled/main.js"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/koa-static": "^4.0.1",
+    "@types/react-dom": "^16.9.4"
+  },
+  "dependencies": {
+    "@monoglot/common": "1.0.0",
+    "koa": "^2.11.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "react-dom": "^16.12.0"
+  }
+}
